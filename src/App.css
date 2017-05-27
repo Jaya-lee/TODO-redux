@@ -1,0 +1,138 @@
+body {
+  background-color: #6F9436;
+  margin: 0;
+  color: #212121;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: #fff;
+  width: 567px;
+  margin: 100px auto;
+  box-shadow: 0 2px 4px 0;
+}
+
+.header {
+  line-height: 128px;
+  font-size: 36px;
+  font-family: 'Arial Rounded MT Bold';
+  text-align: center;
+}
+
+.todo-list {
+  height: 280px;
+}
+.todo-list .container {
+  margin: 20px 120px;
+  height: 240px;
+  overflow: auto;
+}
+.todo-list li {
+  line-height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.todo-list li.completed {
+  color: #989191;
+  text-decoration: line-through;
+  position: relative;
+}
+.todo-list li.completed:after {
+  content: ' ';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-image: url('/img/right.svg' );
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.form {
+  height: 110px;
+  display: flex;
+  align-items: center;
+    justify-content: center;
+}
+form {
+    display: flex;
+    align-items: center;
+}
+.form .text{
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    background: #D8D8D8;
+    width: 360px;
+    padding-left: 20px;
+
+}
+.form .submit {
+    display: block;
+    border: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background:#7ED321 url('/img/add.svg') no-repeat center center;
+    background-size: 40px;
+    -webkit-box-shadow: 0px 2px 4px;
+    box-shadow: 0px 2px 4px;
+    position: relative;
+    left: -10px;
+    cursor: pointer;
+
+}
+.actions {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 40px;
+  padding-bottom: 20px;
+}
+.actions div>div{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.actions span{
+    font-size: 20px;
+    padding-left: 4px;
+}
+
+.list{
+    background: url('/img/list.svg') no-repeat ;
+}
+.list + span{
+    color: #00BCD4;
+}
+.finish{
+    background: url('/img/finish.svg') no-repeat ;
+
+}
+.finish + span {
+    color: #D80027;
+}
+.unfinish{
+    background: url('/img/unfinish.svg') no-repeat ;
+
+}
+.unfinish + span{
+    color: #FFD700;
+}
